@@ -10,15 +10,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <div>Paymerang</div>
+
         {/* Placed JSON in App.js if a more detailed application 
         required it to be stored globally */}
-        {ClientData.map((item, index) => {
-          return <Info post={item} />
+        {ClientData.map((item) => {
+          return <div>
+            <Info post={item} />
+          </div>
         })}
+
       </div>
     );
   }
 }
+
+
 
 export default App;
