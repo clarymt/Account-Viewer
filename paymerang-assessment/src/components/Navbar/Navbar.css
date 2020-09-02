@@ -1,0 +1,9 @@
+.navbar {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+    rgb(83, 83, 204) 35%, rgba(0,212,255,1) 70%, rgba(193, 245, 255, 0.438) 100%);
+    border-radius: 0px 0px 15px 15px;
+
+}
+.navbar-brand {
+    color: orange;
+}

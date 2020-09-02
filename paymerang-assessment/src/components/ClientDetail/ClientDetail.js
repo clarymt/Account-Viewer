@@ -10,10 +10,11 @@ class ClientDetail extends Component {
 
     return (
       <div>
-        <div class="card-group">
-          <div class="card">
+<br></br>
+        <div class="card-group p-3">
+          <div class="card bg-light">
+          <h5 class="card-header">{post.Payee.Name}</h5>
             <div class="card-body">
-              <h5 class="card-title">{post.Payee.Name}</h5>
               <div class="card-text"> Fax: {post.Payee.Fax}</div>
               <div class="card-text"> Phone: {post.Payee.Phone}</div>
               <br></br>
@@ -28,9 +29,9 @@ class ClientDetail extends Component {
             </div>
           </div>
 
-          <div class="card">
+          <div class="card bg-light">
+          <h5 class="card-header">Payment Info</h5>
             <div class="card-body">
-              <h5 class="card-title">Payment Info</h5>
               <br></br>
               <div class="card-text">16-digit Prim Acct Num: <br></br> {post.Payment.PAN}</div>
               <br></br>
@@ -41,9 +42,9 @@ class ClientDetail extends Component {
 
             </div>
           </div>
-          <div class="card">
+          <div class="card bg-light">
+          <h5 class="card-header">Remittance</h5>
             <div class="card-body scrolly">
-              <h5>Remittance</h5>
               {/* Mapping nested array within JSON file stored in App.js to access Remittance */}
               {post.Remittance.map((sub) =>
                 <p>
