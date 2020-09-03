@@ -11,10 +11,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <Navbar />
 
         {/* Placed JSON in App.js if a more detailed application 
         required it to be stored globally */}
+
         {ClientData.map((item) => {
           return <div>
             <Info post={item} />
